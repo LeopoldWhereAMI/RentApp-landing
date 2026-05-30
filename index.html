@@ -1,0 +1,1205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>masterskaya--1</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" data-js-header>
+      <div class="header-container container">
+        <a href="#hero" class="logo">
+          <div class="logo-image">
+            <i data-lucide="wrench" width="20" height="20"></i>
+          </div>
+          <div class="logo-text">
+            <span>Мастерская <span class="accent">№1</span></span>
+          </div>
+        </a>
+        <nav class="header-menu" data-js-header-menu>
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a href="#services" class="header-menu-link">Услуги</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#brands" class="header-menu-link">Бренды</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#how-works" class="header-menu-link">Как мы работаем</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#rent" class="header-menu-link">Аренда </a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#reviews" class="header-menu-link"> Отзывы</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#faq" class="header-menu-link"> FAQ</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#contacts" class="header-menu-link">Контакты</a>
+            </li>
+          </ul>
+          <div class="header-actions header-actions-mobile">
+            <a href="tel:+71234567890" class="header-actions-phone-link">
+              <i data-lucide="phone" width="16" height="16"></i>
+              +7 (123) 456-78-90
+            </a>
+
+            <a
+              href="#contacts"
+              class="header-actions-button button button-primary"
+            >
+              Оставить заявку
+            </a>
+          </div>
+        </nav>
+        <div class="header-actions header-actions-desktop">
+          <a href="tel:+71234567890" class="header-actions-phone-link">
+            <i data-lucide="phone" width="16" height="16"></i>+7 (123)
+            456-78-90</a
+          >
+          <a
+            href="#contacts"
+            class="header-actions-button button button-primary"
+            >Оставить заявку</a
+          >
+        </div>
+        <button
+          class="header-burger-button"
+          type="button"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="visually-hidden">Open menu</span>
+          <span class="burger-button-line"></span>
+          <span class="burger-button-line"></span>
+          <span class="burger-button-line"></span>
+        </button>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="main">
+      <!-- Section-hero -->
+      <section class="hero section" id="hero">
+        <div class="pattern-dots"></div>
+        <div class="hero-container container">
+          <div class="hero-body">
+            <div class="hero-label">
+              <i data-lucide="wrench" width="16" height="16" class="accent"></i>
+              <span>Работаем с 2010 года</span>
+            </div>
+            <h1 class="hero-title">
+              Профессиональный ремонт <span class="accent">электро-</span> и
+              <span class="accent">бензоинструмента</span>
+            </h1>
+            <p class="hero-subtitle">
+              Ремонт, заточка и аренда инструмента любой сложности. Работаем со
+              всеми ведущими брендами. Гарантия на все виды работ.
+            </p>
+            <ul class="hero-info-list">
+              <li class="hero-info-item">
+                <i
+                  data-lucide="check-circle"
+                  width="20"
+                  height="20"
+                  class="accent"
+                ></i>
+                <span>Диагностика за 30 минут</span>
+              </li>
+              <li class="hero-info-item">
+                <i
+                  data-lucide="check-circle"
+                  width="20"
+                  height="20"
+                  class="accent"
+                ></i>
+                <span>Гарантия 1 месяц</span>
+              </li>
+              <li class="hero-info-item">
+                <i
+                  data-lucide="check-circle"
+                  width="20"
+                  height="20"
+                  class="accent"
+                ></i>
+                <span>Оригинальные запчасти</span>
+              </li>
+            </ul>
+            <div class="hero-actions">
+              <a
+                href="#contacts"
+                class="hero-submit-button button button-primary"
+                >Оставить заявку
+                <i data-lucide="arrow-right" width="16" height="16"></i
+              ></a>
+              <a
+                href="#services"
+                class="hero-view-services-button button button-secondary"
+                >Наши услуги</a
+              >
+            </div>
+            <ul class="hero-stats-list">
+              <li class="hero-stats-item">
+                <div class="accent">15+</div>
+                <span> лет опыта</span>
+              </li>
+              <li class="hero-stats-item">
+                <div class="accent">50 000+</div>
+                <span>выполненных заказов</span>
+              </li>
+              <li class="hero-stats-item">
+                <div class="accent">98%</div>
+                <span>довольных клиентов</span>
+              </li>
+              <li class="hero-stats-item">
+                <div class="accent">24ч</div>
+                <span>срочный ремонт</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Section services -->
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="title-group">
+            <span class="tag">Наши услуги</span>
+            <h2 class="section-title">
+              Полный спектр услуг для вашего инструмента
+            </h2>
+            <p class="section-subtitle">
+              От быстрой диагностики до капитального ремонта — мы решаем
+              любые<br />
+              задачи качественно и в срок
+            </p>
+          </div>
+          <ul class="sevices-cards-list">
+            <!-- 1 -->
+            <li class="services-card-item card">
+              <div class="card-item-content">
+                <div class="card-item-icon bg-icon">
+                  <i data-lucide="wrench" width="28" height="28"></i>
+                </div>
+                <div class="card-item-info">
+                  <div class="card-item-info-top">
+                    <h3 class="card-item-title">Ремонт электроинструмента</h3>
+                    <span class="card-item-price accent">от 1 500 ₽</span>
+                  </div>
+                  <p class="card-item-description">
+                    Профессиональный ремонт дрелей, перфораторов, болгарок,
+                    шуруповёртов и другого электроинструмента.
+                  </p>
+                  <div class="card-item-services">
+                    <span>Диагностика</span>
+                    <span>Замена щёток </span>
+                    <span>Ремонт редуктора </span>
+                    <span>Замена подшипников </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- 2 -->
+            <li class="services-card-item card">
+              <div class="card-item-content">
+                <div class="card-item-icon bg-icon">
+                  <i data-lucide="fuel" width="28" height="28"></i>
+                </div>
+                <div class="card-item-info">
+                  <div class="card-item-info-top">
+                    <h3 class="card-item-title">Ремонт бензоинструмента</h3>
+                    <span class="card-item-price accent">от 2 000 ₽</span>
+                  </div>
+                  <p class="card-item-description">
+                    Ремонт бензопил, триммеров, мотокос, газонокосилок и другой
+                    бензотехники.
+                  </p>
+                  <div class="card-item-services">
+                    <span>Настройка карбюратора</span>
+                    <span>Замена поршневой</span>
+                    <span>Ремонт стартера</span>
+                    <span>Чистка фильтров</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- 3 -->
+            <li class="services-card-item card">
+              <div class="card-item-content">
+                <div class="card-item-icon bg-icon">
+                  <i data-lucide="package" width="28" height="28"></i>
+                </div>
+                <div class="card-item-info">
+                  <div class="card-item-info-top">
+                    <h3 class="card-item-title">Аренда инструмента</h3>
+                    <span class="card-item-price accent">от 500 ₽/сутки</span>
+                  </div>
+                  <p class="card-item-description">
+                    Широкий выбор профессионального инструмента и оборудования в
+                    аренду на любой срок.
+                  </p>
+                  <div class="card-item-services">
+                    <span>Строительный инструмент</span>
+                    <span>Садовая техника</span>
+                    <span>Сварочное оборудование</span>
+                    <span>Компрессоры</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- 4 -->
+            <li class="services-card-item card">
+              <div class="card-item-content">
+                <div class="card-item-icon bg-icon">
+                  <i data-lucide="scissors" width="28" height="28"></i>
+                </div>
+                <div class="card-item-info">
+                  <div class="card-item-info-top">
+                    <h3 class="card-item-title">Заточка инструментов</h3>
+                    <span class="card-item-price accent">от 300 ₽</span>
+                  </div>
+                  <p class="card-item-description">
+                    Профессиональная заточка маникюрных и парикмахерских
+                    инструментов на немецком оборудовании.
+                  </p>
+                  <div class="card-item-services">
+                    <span>Маникюрные ножницы</span>
+                    <span>Кусачки</span>
+                    <span>Парикмахерские ножницы</span>
+                    <span>Машинки для стрижки</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Sections brands -->
+      <section class="brands section" id="brands">
+        <div class="container">
+          <div class="title-group">
+            <span class="tag">Бренды</span>
+            <h2 class="section-title">Работаем с ведущими брендами</h2>
+            <p class="section-subtitle">
+              Ремонтируем и обслуживаем инструменты всех популярных
+              производителей
+            </p>
+          </div>
+          <ul class="brands-list">
+            <li class="brand-item makita">
+              <span class="brand-name">Makita</span>
+            </li>
+            <li class="brand-item bosch">
+              <span class="brand-name">Bosch</span>
+            </li>
+            <li class="brand-item dewalt">
+              <span class="brand-name">DeWalt</span>
+            </li>
+            <li class="brand-item stihl">
+              <span class="brand-name">Stihl</span>
+            </li>
+            <li class="brand-item husqvarna">
+              <span class="brand-name">Husqvarna</span>
+            </li>
+            <li class="brand-item metabo">
+              <span class="brand-name">Metabo</span>
+            </li>
+            <li class="brand-item hilti">
+              <span class="brand-name">Hilti</span>
+            </li>
+            <li class="brand-item milwaukee">
+              <span class="brand-name">Milwaukee</span>
+            </li>
+          </ul>
+          <div class="brands-note">
+            <p>
+              Не нашли свой бренд?
+              <span>Мы работаем с любыми производителями!</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section how-works -->
+      <section class="how-works section" id="how-works">
+        <div class="container">
+          <div class="title-group">
+            <span class="tag">Процесс работы</span>
+            <h2 class="section-title">Как мы работаем</h2>
+            <p class="section-subtitle">
+              Простой и прозрачный процесс от заявки до получения исправного
+              инструмента
+            </p>
+          </div>
+          <ul class="how-works-list">
+            <!-- 01 -->
+            <li class="how-works-item">
+              <div class="how-works-item-top">
+                <div class="how-works-item-icon bg-icon">
+                  <i data-lucide="phone" width="24" height="24"></i>
+                </div>
+                <span>01</span>
+              </div>
+              <h3 class="how-works-item-title">Заявка</h3>
+              <p class="how-works-iteem-description">
+                Оставьте заявку на сайте или позвоните нам. Опишите проблему с
+                инструментом.
+              </p>
+            </li>
+            <!-- 02 -->
+            <li class="how-works-item">
+              <div class="how-works-item-top">
+                <div class="how-works-item-icon bg-icon">
+                  <i data-lucide="search" width="24" height="24"></i>
+                </div>
+                <span>02</span>
+              </div>
+              <h3 class="how-works-item-title">Диагностика</h3>
+              <p class="how-works-iteem-description">
+                Бесплатная диагностика в течение 30 минут. Определяем причину
+                поломки и стоимость ремонта.
+              </p>
+            </li>
+            <!-- 03 -->
+            <li class="how-works-item">
+              <div class="how-works-item-top">
+                <div class="how-works-item-icon bg-icon">
+                  <i data-lucide="wrench" width="24" height="24"></i>
+                </div>
+                <span>03</span>
+              </div>
+              <h3 class="how-works-item-title">Ремонт</h3>
+              <p class="how-works-iteem-description">
+                Выполняем ремонт с использованием оригинальных запчастей. Срок —
+                от 1 до 5 дней.
+              </p>
+            </li>
+            <!-- 04 -->
+            <li class="how-works-item">
+              <div class="how-works-item-top">
+                <div class="how-works-item-icon bg-icon">
+                  <i data-lucide="check-circle" width="24" height="24"></i>
+                </div>
+                <span>04</span>
+              </div>
+              <h3 class="how-works-item-title">Выдача</h3>
+              <p class="how-works-iteem-description">
+                Проверяем инструмент при вас и выдаём гарантию на все
+                выполненные работы.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section rent -->
+      <section class="rent section" id="rent" data-js-rent-section>
+        <div class="container">
+          <div class="title-group">
+            <span class="tag">Аренда</span>
+            <h2 class="section-title">Аренда оборудования</h2>
+            <p class="section-subtitle">
+              Профессиональный инструмент в аренду на любой срок — от одного дня
+              до нескольких месяцев
+            </p>
+          </div>
+          <ul class="rent-list" data-js-rent-list>
+            <template id="rent-list-template">
+              <li class="rent-item" data-js-rent-item>
+                <div class="rent-item-top">
+                  <span
+                    class="rent-item-category accent"
+                    data-js-rent-item-category
+                  ></span>
+                  <span
+                    class="status-badge status-badge-available"
+                    data-js-status-badge
+                  ></span>
+                </div>
+                <h3 class="rent-item-title" data-js-rent-item-title></h3>
+                <p class="rent-item-price" data-js-rent-item-price></p>
+                <!-- <div class="rent-item-specs"></div> -->
+                <div class="rent-item-image-wrapper">
+                  <img
+                    alt="Фото инструмента"
+                    class="rent-item-image"
+                    data-js-rent-item-image
+                    loading="lazy"
+                    width="250"
+                    height="170"
+                    onerror="
+                      this.onerror = null;
+                      this.parentNode.classList.add('img-error');
+                    "
+                  />
+                </div>
+                <a
+                  href="/"
+                  class="rent-item-link button button-primary"
+                  data-js-rent-item-link
+                ></a>
+              </li>
+            </template>
+          </ul>
+          <div
+            class="pagination-container visually-hidden"
+            data-js-pagination-container
+          >
+            <button
+              class="pagination-prev-button button button-primary"
+              data-js-pagination-prev-button
+              title="Назад"
+            >
+              <i data-lucide="ChevronLeft" width="16" height="16"></i>
+            </button>
+            <div class="pagination-pages">
+              Стр. <span data-js-cuurent-page></span> из
+              <span data-js-total-pages></span>
+            </div>
+            <button
+              class="pagination-next-button button button-primary"
+              data-js-pagination-next-button
+              title="Вперёд"
+            >
+              <i data-lucide="ChevronRight" width="16" height="16"></i>
+            </button>
+          </div>
+          <p class="rent-note">
+            Нужен другой инструмент?
+            <span> Свяжитесь с нами для уточнения наличия</span>
+          </p>
+        </div>
+      </section>
+      <!-- Section why choose us -->
+      <section class="why-choose-us section">
+        <div class="container">
+          <div class="title-group">
+            <span class="tag">Преимущества</span>
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <p class="section-subtitle">
+              Более 15 лет мы помогаем профессионалам и любителям поддерживать
+              инструмент в идеальном состоянии
+            </p>
+          </div>
+          <ul class="why-choose-us-list">
+            <!-- 1 -->
+            <li class="why-choose-us-item card">
+              <div class="why-choose-us-item-icon bg-icon">
+                <i data-lucide="shield" width="24" height="24"></i>
+              </div>
+              <h3 class="why-choose-us-item-title">Гарантия 12 месяцев</h3>
+              <p class="why-choose-us-item-description">
+                На все виды выполненных работ и установленные запчасти
+              </p>
+            </li>
+            <!-- 2 -->
+            <li class="why-choose-us-item card">
+              <div class="why-choose-us-item-icon bg-icon">
+                <i data-lucide="clock" width="24" height="24"></i>
+              </div>
+              <h3 class="why-choose-us-item-title">Срочный ремонт</h3>
+              <p class="why-choose-us-item-description">
+                Возможность срочного ремонта в течение 24 часов
+              </p>
+            </li>
+            <!-- 3 -->
+            <li class="why-choose-us-item card">
+              <div class="why-choose-us-item-icon bg-icon">
+                <i data-lucide="award" width="24" height="24"></i>
+              </div>
+              <h3 class="why-choose-us-item-title">
+                Сертифицированные мастера
+              </h3>
+              <p class="why-choose-us-item-description">
+                Все специалисты прошли обучение у производителей
+              </p>
+            </li>
+            <!-- 4 -->
+            <li class="why-choose-us-item card">
+              <div class="why-choose-us-item-icon bg-icon">
+                <i data-lucide="truck" width="24" height="24"></i>
+              </div>
+              <h3 class="why-choose-us-item-title">Бесплатная доставка</h3>
+              <p class="why-choose-us-item-description">
+                При заказе от 5 000 ₽ доставим инструмент бесплатно
+              </p>
+            </li>
+            <!-- 5 -->
+            <li class="why-choose-us-item card">
+              <div class="why-choose-us-item-icon bg-icon">
+                <i data-lucide="credit-card" width="24" height="24"></i>
+              </div>
+              <h3 class="why-choose-us-item-title">Удобная оплата</h3>
+              <p class="why-choose-us-item-description">
+                Наличные, карты, безналичный расчёт для юридических лиц
+              </p>
+            </li>
+            <!-- 6 -->
+            <li class="why-choose-us-item card">
+              <div class="why-choose-us-item-icon bg-icon">
+                <i data-lucide="headset" width="24" height="24"></i>
+              </div>
+              <h3 class="why-choose-us-item-title">Поддержка 24/7</h3>
+              <p class="why-choose-us-item-description">
+                Консультация и приём заявок в любое время суток
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section reviews -->
+      <section class="reviews section" id="reviews">
+        <div class="container">
+          <div class="title-group">
+            <span class="tag">Отзывы</span>
+            <h2 class="section-title">Что говорят наши клиенты</h2>
+            <p class="section-subtitle">
+              Более 50 000 довольных клиентов доверили нам свой инструмент
+            </p>
+          </div>
+          <ul class="reviews-list">
+            <!-- 1 -->
+            <li class="reviews-item">
+              <div class="reviews-item-icon">
+                <i data-lucide="quote" width="32" height="32"></i>
+              </div>
+              <p class="review-text">
+                Отличный сервис! Сдал перфоратор Makita на ремонт — через 2 дня
+                забрал как новый. Цены адекватные, работают быстро и
+                качественно.
+              </p>
+              <div class="review-item-bottom">
+                <div class="review-user-info">
+                  <p>Алексей Петров</p>
+                  <p>Строитель</p>
+                </div>
+                <div class="rewiev-rating">
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                </div>
+              </div>
+            </li>
+            <!-- 2 -->
+            <li class="reviews-item">
+              <div class="reviews-item-icon">
+                <i data-lucide="quote" width="32" height="32"></i>
+              </div>
+              <p class="review-text">
+                Регулярно затачиваю здесь свои маникюрные инструменты. Качество
+                заточки превосходное, инструменты режут идеально. Рекомендую
+                всем мастерам!
+              </p>
+              <div class="review-item-bottom">
+                <div class="review-user-info">
+                  <p>Марина Козлова</p>
+                  <p>Мастер маникюра</p>
+                </div>
+                <div class="rewiev-rating">
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                </div>
+              </div>
+            </li>
+            <!-- 3 -->
+            <li class="reviews-item">
+              <div class="reviews-item-icon">
+                <i data-lucide="quote" width="32" height="32"></i>
+              </div>
+              <p class="review-text">
+                Арендуем технику для объектов уже третий год. Всегда в отличном
+                состоянии, если что-то ломается — меняют без вопросов. Надёжные
+                партнёры!
+              </p>
+              <div class="review-item-bottom">
+                <div class="review-user-info">
+                  <p>Дмитрий Волков</p>
+                  <p>Прораб</p>
+                </div>
+                <div class="rewiev-rating">
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                </div>
+              </div>
+            </li>
+            <!-- 4 -->
+            <li class="reviews-item">
+              <div class="reviews-item-icon">
+                <i data-lucide="quote" width="32" height="32"></i>
+              </div>
+              <p class="review-text">
+                Принёс старую бензопилу Stihl, думал — на выброс. А ребята её
+                реанимировали! Теперь работает как новая. Спасибо за честный
+                подход.
+              </p>
+              <div class="review-item-bottom">
+                <div class="review-user-info">
+                  <p>Сергей Иванов</p>
+                  <p>Дачник</p>
+                </div>
+                <div class="rewiev-rating">
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i data-lucide="star" width="16" height="16"></i>
+                </div>
+              </div>
+            </li>
+            <!-- 5 -->
+            <li class="reviews-item">
+              <div class="reviews-item-icon">
+                <i data-lucide="quote" width="32" height="32"></i>
+              </div>
+              <p class="review-text">
+                Затачивают ножницы и машинки идеально. Видно, что мастера знают
+                своё дело. Очень довольна качеством и скоростью работы.
+              </p>
+              <div class="review-item-bottom">
+                <div class="review-user-info">
+                  <p>Ольга Сидорова</p>
+                  <p>Парикмахер</p>
+                </div>
+                <div class="rewiev-rating">
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                </div>
+              </div>
+            </li>
+            <!-- 6 -->
+            <li class="reviews-item">
+              <div class="reviews-item-icon">
+                <i data-lucide="quote" width="32" height="32"></i>
+              </div>
+              <p class="review-text">
+                Ремонтирую у них весь свой инструмент уже 5 лет. Ни разу не
+                подвели. Честные цены, всё прозрачно, гарантия работает.
+              </p>
+              <div class="review-item-bottom">
+                <div class="review-user-info">
+                  <p>Виктор Кузнецов</p>
+                  <p>Частный мастер</p>
+                </div>
+                <div class="rewiev-rating">
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                  <i
+                    data-lucide="star"
+                    class="star star-active"
+                    width="16"
+                    height="16"
+                  ></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section faq -->
+      <section class="faq section" id="faq">
+        <div class="container">
+          <div class="title-group">
+            <span class="tag">FAQ</span>
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <p class="section-subtitle">
+              Ответы на популярные вопросы о наших услугах
+            </p>
+          </div>
+          <div class="accardion-wrapper">
+            <!-- 1 -->
+            <details class="accardion-item">
+              <summary>
+                <h3>Сколько стоит диагностика инструмента?</h3>
+              </summary>
+              <p>
+                Диагностика бесплатна и занимает около 30 минут. Мы определим
+                причину неисправности и сообщим точную стоимость ремонта до
+                начала работ.
+              </p>
+            </details>
+            <!-- 2 -->
+            <details class="accardion-item">
+              <summary>
+                <h3>Какая гарантия на ремонт?</h3>
+              </summary>
+              <p>
+                Мы предоставляем гарантию 12 месяцев на все виды работ и
+                установленные запчасти. При обнаружении дефекта в гарантийный
+                период ремонт выполняется бесплатно.
+              </p>
+            </details>
+            <!-- 3 -->
+            <details class="accardion-item">
+              <summary>
+                <h3>Можно ли сделать срочный ремонт?</h3>
+              </summary>
+              <p>
+                Да, мы предлагаем услугу срочного ремонта в течение 24 часов.
+                Стоимость срочного ремонта увеличивается на 30% от стандартной
+                цены.
+              </p>
+            </details>
+            <!-- 4 -->
+            <details class="accardion-item">
+              <summary>
+                <h3>Какие запчасти вы используете?</h3>
+              </summary>
+              <p>
+                Мы используем только оригинальные запчасти от производителей или
+                качественные аналоги от проверенных поставщиков. По желанию
+                клиента можем установить б/у детали со скидкой.
+              </p>
+            </details>
+            <!-- 5 -->
+            <details class="accardion-item">
+              <summary>
+                <h3>Работаете ли вы с юридическими лицами?</h3>
+              </summary>
+              <p>
+                Да, мы работаем с юридическими лицами по безналичному расчёту.
+                Предоставляем все необходимые документы: договор, акты,
+                счета-фактуры.
+              </p>
+            </details>
+            <!-- 6 -->
+            <details class="accardion-item">
+              <summary>
+                <h3>Как оформить аренду инструмента?</h3>
+              </summary>
+              <p>
+                Для оформления аренды нужен паспорт и залог (возвращается при
+                сдаче инструмента). Можно забронировать инструмент заранее по
+                телефону или через форму на сайте.
+              </p>
+            </details>
+            <!-- 7 -->
+            <details class="accardion-item">
+              <summary>
+                <h3>Есть ли доставка?</h3>
+              </summary>
+              <p>
+                Да, мы осуществляем доставку по Москве и области. При заказе от
+                5 000 ₽ доставка бесплатная. В остальных случаях стоимость
+                рассчитывается индивидуально.
+              </p>
+            </details>
+            <!-- 8 -->
+            <details class="accardion-item">
+              <summary>
+                <h3>
+                  Ремонтируете ли вы инструмент на гарантии производителя?
+                </h3>
+              </summary>
+              <p>
+                Мы не являемся официальным сервисным центром, поэтому ремонт у
+                нас может лишить вас заводской гарантии. Рекомендуем сначала
+                обратиться в авторизованный сервис производителя.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <!-- Section contacts -->
+      <section class="contacts section" id="contacts">
+        <div class="container">
+          <div class="title-group">
+            <span class="tag">Контакты</span>
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <p class="section-subtitle">
+              Оставьте заявку или приезжайте к нам в мастерскую — мы всегда рады
+              помочь!
+            </p>
+          </div>
+          <div class="contacts-body">
+            <!-- form -->
+            <div class="contacts-form-wrapper">
+              <h3 class="contacts-form-title">Оставить заявку</h3>
+              <form class="contacts-form">
+                <!-- name -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="name">Ваше имя</label>
+                  <input
+                    type="text"
+                    placeholder="Ваше имя"
+                    name="name"
+                    id="name"
+                    autocomplete="name"
+                    required
+                    pattern=".*\S.*"
+                    class="form-name-input input"
+                  />
+                </div>
+                <!-- phone -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="tel">Телефон</label>
+                  <input
+                    type="tel"
+                    placeholder="Телефон"
+                    name="tel"
+                    id="tel"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    required
+                    class="form-tel-input input"
+                  />
+                </div>
+                <!-- email -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="email"
+                    >Email (необязательно)</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="Email (необязательно)"
+                    name="email"
+                    id="email"
+                    autocomplete="email"
+                    class="form-email-input input"
+                  />
+                </div>
+                <!-- textarea -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="questions"
+                    >Опишите вашу проблему или вопрос</label
+                  >
+                  <textarea
+                    name="questions"
+                    id="questions"
+                    placeholder="Опишите вашу проблему или вопрос"
+                    required
+                    pattern=".*\S.*"
+                    class="contacts-form-textarea textaerea"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="contacts-form-button button button-primary"
+                >
+                  Отправить заявку
+                </button>
+                <p class="contacts-form-description">
+                  Нажимая кнопку, вы соглашаетесь с политикой обработки
+                  персональных данных
+                </p>
+              </form>
+            </div>
+            <!-- contact-info -->
+            <div class="contact-info-wrapper">
+              <ul class="contact-info-list">
+                <!-- Adress -->
+                <li class="contact-info-item">
+                  <div class="contact-info-item-icon bg-icon">
+                    <i data-lucide="map-pin" width="24" height="24"></i>
+                  </div>
+                  <p class="contact-info-item-content">
+                    <span>Адрес</span>
+                    <span>г. Москва, ул. Промышленная, д. 15, стр. 2</span>
+                  </p>
+                </li>
+                <!-- Phone -->
+                <li class="contact-info-item">
+                  <div class="contact-info-item-icon bg-icon">
+                    <i data-lucide="phone" width="24" height="24"></i>
+                  </div>
+                  <p class="contact-info-item-content">
+                    <span>Телефон</span>
+                    <a href="tel:+7(495)1234567">+7 (495) 123-45-67</a>
+                  </p>
+                </li>
+                <!-- Email -->
+                <li class="contact-info-item">
+                  <div class="contact-info-item-icon bg-icon">
+                    <i data-lucide="mail" width="24" height="24"></i>
+                  </div>
+                  <p class="contact-info-item-content">
+                    <span>Email</span>
+                    <a href="mailto:info@company.ru">info@masterskaya1.ru</a>
+                  </p>
+                </li>
+                <!-- work-hours -->
+                <li class="contact-info-item">
+                  <div class="contact-info-item-icon bg-icon">
+                    <i data-lucide="clock" width="24" height="24"></i>
+                  </div>
+                  <p class="contact-info-item-content">
+                    <span> Вс: 10:00 - 18:00</span>
+                    <span>г. Москва, ул. Промышленная, д. 15, стр. 2</span>
+                  </p>
+                </li>
+              </ul>
+              <div class="map-wrapper">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A9eabaca5bf47f3c9a8df8fe0667c6c14e019c13264ac8c65f49e20321c243c96&amp;source=constructor"
+                  width="100%"
+                  height="320"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-body">
+          <!-- col-1 -->
+          <div class="footer-body-column">
+            <a href="#hero" class="logo">
+              <div class="logo-image">
+                <i data-lucide="wrench" width="20" height="20"></i>
+              </div>
+              <div class="logo-text">
+                <span>Мастерская <span class="accent">№1</span></span>
+              </div>
+            </a>
+            <p class="footer-body-column-description">
+              Профессиональный ремонт электро- и бензоинструмента, аренда
+              оборудования и заточка инструментов с 2010 года.
+            </p>
+            <ul class="foter-body-column-list-contacts">
+              <!-- tel -->
+              <li class="foter-body-column-item">
+                <i
+                  data-lucide="phone"
+                  width="16"
+                  height="16"
+                  class="accent"
+                ></i>
+                <a href="tel:+7(495)1234567">+7 (495) 123-45-67</a>
+              </li>
+              <!-- email -->
+              <li class="foter-body-column-item">
+                <i data-lucide="mail" width="16" height="16" class="accent"></i>
+                <a href="mailto:info@company.ru">info@masterskaya1.ru</a>
+              </li>
+              <!-- address -->
+              <li class="foter-body-column-item">
+                <i
+                  data-lucide="map-pin"
+                  width="16"
+                  height="16"
+                  class="accent"
+                ></i>
+                <span>г. Москва, ул. Промышленная, д. 15, стр. 2</span>
+              </li>
+            </ul>
+          </div>
+          <!-- col-2 -->
+          <div class="footer-body-column">
+            <h4 class="footer-body-column-title">Услуги</h4>
+            <ul class="foter-body-column-list">
+              <li class="foter-body-column-item">
+                <a href="/">Ремонт электроинструмента</a>
+              </li>
+              <li class="foter-body-column-item">
+                <a href="/">Ремонт бензоинструмента</a>
+              </li>
+              <li class="foter-body-column-item">
+                <a href="/">Аренда оборудования</a>
+              </li>
+              <li class="foter-body-column-item">
+                <a href="/">Заточка инструментов</a>
+              </li>
+            </ul>
+          </div>
+          <!-- col-3 -->
+          <div class="footer-body-column">
+            <h4 class="footer-body-column-title">Компания</h4>
+            <ul class="foter-body-column-list">
+              <li class="foter-body-column-item">
+                <a href="/">О компании</a>
+              </li>
+              <li class="foter-body-column-item">
+                <a href="/">Наши преимущества</a>
+              </li>
+              <li class="foter-body-column-item">
+                <a href="/">Отзывы клиентов</a>
+              </li>
+              <li class="foter-body-column-item">
+                <a href="/">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <!-- col-4 -->
+          <div class="footer-body-column">
+            <h4 class="footer-body-column-title">Поддержка</h4>
+            <ul class="foter-body-column-list">
+              <li class="foter-body-column-item">
+                <a href="/">Частые вопросы</a>
+              </li>
+              <li class="foter-body-column-item">
+                <a href="/">Гарантия</a>
+              </li>
+              <li class="foter-body-column-item">
+                <a href="/">Доставка</a>
+              </li>
+              <li class="foter-body-column-item">
+                <a href="/">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Мастерская №1. Все права защищены.</p>
+          <p>Режим работы: Пн-Сб 9:00-20:00</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

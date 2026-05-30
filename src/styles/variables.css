@@ -1,0 +1,60 @@
+:root {
+  --color-darkest: oklch(0.12 0 0);
+  --color-dark: oklch(0.15 0.005 250);
+  --color-dark-light: oklch(0.18 0.005 250);
+  --color-light: oklch(0.95 0 0);
+  --color-light-secondary: lab(88.4% 0 0.0000119209);
+  --color-orange: oklch(0.7 0.18 45);
+  --color-orange-light: #f6722b33;
+  --color-orange-dark: #f6722b1a;
+  --color-muted: oklch(0.65 0 0);
+  --color-error: #ef4444;
+
+  --bg-card: lab(5.26385% -0.391565 -1.40753);
+  --bg-brand-item-hover: oklch(0.25 0.005 250);
+
+  /* Цвета брендов */
+  --brand-makita: #00a0d2;
+  --brand-bosch: #e40014;
+  --brand-dewalt: #ffc107;
+  --brand-stihl: #ff6600;
+  --brand-husqvarna: #f7941d;
+  --brand-metabo: #009f4d;
+  --brand-hilti: #e20000;
+  --brand-milwaukee: #d41e2d;
+
+  /* Hover версии*/
+  --brand-makita-hover: #0078a0;
+  --brand-bosch-hover: #c40010;
+  --brand-dewalt-hover: #e0a800;
+  --brand-stihl-hover: #e55c00;
+  --brand-husqvarna-hover: #e07f0d;
+  --brand-metabo-hover: #008040;
+  --brand-hilti-hover: #b80000;
+  --brand-milwaukee-hover: #b81a27;
+
+  --font-family-base: "Inter", sans-serif;
+
+  --container-width: 1500px;
+  --container-padding-x: var(--space-4);
+
+  --subtitle-width: 42rem;
+
+  --spacing: 0.25rem; /* базовый шаг (4px) */
+  /* Производные отступы */
+  --space-2: calc(var(--spacing) * 2); /* 0.5rem = 8px */
+  --space-3: calc(var(--spacing) * 3);
+  --space-4: calc(var(--spacing) * 4); /* 1rem = 16px */
+  --space-6: calc(var(--spacing) * 6); /* 1.5rem = 24px */
+  --space-8: calc(var(--spacing) * 8); /* 2rem = 32px */
+  --space-10: calc(var(--spacing) * 10); /* 2.5rem = 40px */
+  --space-12: calc(var(--spacing) * 12); /* 3rem = 48px */
+  --space-16: calc(var(--spacing) * 16); /* 4rem = 64px */
+
+  --header-height: 80px;
+
+  --radius: 0.5rem;
+
+  --border: oklch(0.28 0.005 250);
+  --border-hover: #f6722b80;
+}

@@ -74,6 +74,10 @@ class Pagination {
     this.paginationContainer.classList.remove("visually-hidden");
   }
 
+  hide() {
+    this.paginationContainer.classList.add("visually-hidden");
+  }
+
   private update() {
     const start = (this.currentPage - 1) * this.maxItems;
     const end = start + this.maxItems;

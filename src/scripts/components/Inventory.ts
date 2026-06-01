@@ -28,15 +28,17 @@ class Inventory {
   }
 
   async render() {
+    this.showSkeletonLoader();
     try {
       const inventory = await getInventory();
-
+      this.removeSkeletonLoader();
       const pagination = new Pagination(inventory, (items, maxItems) =>
         this.renderItems(items, maxItems),
       );
 
       pagination.init();
     } catch (error) {
+      this.removeSkeletonLoader();
       this.handleError(error);
     }
   }
@@ -69,6 +71,34 @@ class Inventory {
 
   private clearRentList() {
     this.rentList.replaceChildren();
+  }
+
+  private showSkeletonLoader() {
+    this.clearRentList();
+
+    // Показываем 6 скелетон-карточек
+    for (let i = 0; i < 6; i++) {
+      const skeletonItem = document.createElement("li");
+      skeletonItem.className = "skeleton-card";
+      skeletonItem.innerHTML = `
+      <div class="rent-item-top">
+        <div class="skeleton-category"></div>
+        <div class="skeleton-badge"></div>
+      </div>
+      <div class="skeleton-title"></div>
+      <div class="skeleton-price"></div>
+      <div class="skeleton-image-wrapper">
+        <div class="skeleton-image"></div>
+      </div>
+      <div class="skeleton-button"></div>
+    `;
+      this.rentList.append(skeletonItem);
+    }
+  }
+
+  private removeSkeletonLoader() {
+    const skeletons = this.rentList.querySelectorAll(".skeleton-card");
+    skeletons.forEach((skeleton) => skeleton.remove());
   }
 
   private handleError(error: unknown) {

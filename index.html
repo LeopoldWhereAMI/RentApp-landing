@@ -1,9 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>masterskaya--1</title>
+    <title>Masterskaya №1</title>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Мастерская №1 — профессиональный ремонт электро- и бензоинструмента в городе Железногорск. Аренда оборудования, заточка инструментов. Гарантия 12 месяцев. Бесплатная диагностика."
+    />
+    <link rel="canonical" href="https://rent-app-landing.vercel.app/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta
+      property="og:image"
+      content="https://rent-app-landing.vercel.app/og-image.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Мастерская №1 — ремонт инструмента"
+    />
+    <meta property="og:url" content="https://rent-app-landing.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Мастерская №1" />
   </head>
   <body>
     <!-- header -->
@@ -402,9 +422,9 @@
               до нескольких месяцев
             </p>
           </div>
-          <ul class="rent-list" data-js-rent-list>
+          <div class="rent-list" data-js-rent-list>
             <template id="rent-list-template">
-              <li class="rent-item" data-js-rent-item>
+              <article class="rent-item" data-js-rent-item>
                 <div class="rent-item-top">
                   <span
                     class="rent-item-category accent"
@@ -437,9 +457,9 @@
                   class="rent-item-link button button-primary"
                   data-js-rent-item-link
                 ></a>
-              </li>
+              </article>
             </template>
-          </ul>
+          </div>
           <div
             class="pagination-container visually-hidden"
             data-js-pagination-container
@@ -448,10 +468,16 @@
               class="pagination-prev-button button button-primary"
               data-js-pagination-prev-button
               title="Назад"
+              aria-label="Предыдущая страница"
             >
-              <i data-lucide="ChevronLeft" width="16" height="16"></i>
+              <i
+                data-lucide="ChevronLeft"
+                width="16"
+                height="16"
+                aria-hidden="true"
+              ></i>
             </button>
-            <div class="pagination-pages">
+            <div class="pagination-pages" aria-live="polite">
               Стр. <span data-js-cuurent-page></span> из
               <span data-js-total-pages></span>
             </div>
@@ -459,8 +485,14 @@
               class="pagination-next-button button button-primary"
               data-js-pagination-next-button
               title="Вперёд"
+              aria-label="Следующая страница"
             >
-              <i data-lucide="ChevronRight" width="16" height="16"></i>
+              <i
+                data-lucide="ChevronRight"
+                width="16"
+                height="16"
+                aria-hidden="true"
+              ></i>
             </button>
           </div>
           <p class="rent-note">
@@ -1201,5 +1233,57 @@
     </footer>
 
     <script type="module" src="/src/main.ts"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Мастерская №1",
+        "image": "https://rent-app-landing.vercel.app/og-image.jpg",
+        "logo": "https://rent-app-landing.vercel.app/favicon.svg",
+        "url": "https://rent-app-landing.vercel.app/",
+        "telephone": "+7 (495) 123-45-67",
+        "email": "info@masterskaya1.ru",
+        "priceRange": "₽₽",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Промышленная, д. 15, стр. 2",
+          "addressLocality": "Москва",
+          "addressRegion": "Москва",
+          "addressCountry": "RU"
+        },
+        "openingHours": ["Mo-Sa 09:00-20:00", "Su 10:00-18:00"],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "10:00",
+            "closes": "18:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "128"
+        },
+        "sameAs": ["https://t.me/masterskaya1", "https://vk.com/masterskaya1"],
+        "offers": {
+          "@type": "Offer",
+          "description": "Ремонт электро- и бензоинструмента, аренда оборудования"
+        }
+      }
+    </script>
   </body>
 </html>

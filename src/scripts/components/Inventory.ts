@@ -23,8 +23,10 @@ class Inventory {
       rentSection,
       this.selectors.template,
     );
+  }
 
-    this.render();
+  async init() {
+    await this.render();
   }
 
   async render() {
@@ -110,7 +112,7 @@ class Inventory {
   }
 
   private showError(message: string) {
-    const errorItem = document.createElement("li");
+    const errorItem = document.createElement("p");
     errorItem.className = "error-message";
     errorItem.textContent = `${message}. Попробуйте обновить страницу позже.`;
 

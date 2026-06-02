@@ -6,4 +6,4 @@ import Inventory from "./scripts/components/Inventory";
 createIcons({ icons });
 
 new Header();
-new Inventory();
+new Inventory().init();

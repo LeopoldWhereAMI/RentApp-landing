@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rent-app-landing.vercel.app/sitemap.xml

@@ -1,6 +1,6 @@
 class PlaceholderCard {
   create() {
-    const placeholderElement = document.createElement("li");
+    const placeholderElement = document.createElement("article");
 
     placeholderElement.classList.add("rent-item", "rent-item--placeholder");
 

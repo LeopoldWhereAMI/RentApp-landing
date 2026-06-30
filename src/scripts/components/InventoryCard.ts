@@ -1,3 +1,4 @@
+import { API_URL } from "../shared/config/config";
 import { categoryLabels, statusLabels } from "../shared/constants/inventory";
 import { getElement } from "../shared/helpers/dom";
 import type { RentItem } from "../types/inventory";
@@ -49,7 +50,8 @@ class InventoryCard {
       itemLink.setAttribute("aria-disabled", "true");
     }
 
-    itemImage.src = item.image_url || "";
+    // itemImage.src = item.image_url || "";
+    itemImage.src = item.image_url ? `${API_URL}${item.image_url}` : "";
     itemImage.alt = item.name;
 
     return clone;

@@ -1,9 +1,9 @@
-import { API_URL, USER_ID } from "../shared/config/config";
+import { API_URL } from "../shared/config/config";
 import type { RentItem } from "../types/inventory";
 
 export const getInventory = async (): Promise<RentItem[]> => {
   try {
-    const response = await fetch(`${API_URL}/api/inventory?user_id=${USER_ID}`);
+    const response = await fetch(`${API_URL}/api/public/inventory`);
 
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);

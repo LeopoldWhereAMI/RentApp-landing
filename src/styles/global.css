@@ -347,17 +347,17 @@ svg * {
 }
 
 .logo-image {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  width: 40px;
-  aspect-ratio: 1;
+  justify-content: center; */
+  width: 50px;
+  /* aspect-ratio: 1;
   background-color: var(--color-orange);
-  border-radius: var(--radius);
+  border-radius: var(--radius); */
 
-  & svg {
+  /* & svg {
     color: var(--color-dark);
-  }
+  } */
 }
 
 .logo-text {

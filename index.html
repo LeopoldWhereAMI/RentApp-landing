@@ -32,53 +32,6 @@
       property="og:description"
       content="Ремонт электро- и бензоинструмента в Железногорске. Аренда и заточка. Гарантия 12 месяцев."
     />
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) {
-            return;
-          }
-        }
-        ((k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a));
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js?id=109643397",
-        "ym",
-      );
-
-      ym(109643397, "init", {
-        ssr: true,
-        webvisor: true,
-        clickmap: true,
-        ecommerce: "dataLayer",
-        referrer: document.referrer,
-        url: location.href,
-        accurateTrackBounce: true,
-        trackLinks: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/109643397"
-          style="position: absolute; left: -9999px"
-          alt=""
-        /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
   </head>
   <body>
     <!-- header -->
@@ -86,7 +39,8 @@
       <div class="header-container container">
         <a href="#hero" class="logo">
           <div class="logo-image">
-            <i data-lucide="wrench" width="20" height="20"></i>
+            <!-- <i data-lucide="wrench" width="20" height="20"></i> -->
+            <img src="./public/logo.webp" alt="" />
           </div>
           <div class="logo-text">
             <span>Мастерская <span class="accent">№1</span></span>
@@ -236,6 +190,96 @@
           </div>
         </div>
       </section>
+      <!-- Section rent -->
+      <section class="rent section" id="rent" data-js-rent-section>
+        <div class="container">
+          <div class="title-group">
+            <span class="tag">Аренда</span>
+            <h2 class="section-title">Аренда оборудования</h2>
+            <p class="section-subtitle">
+              Профессиональный инструмент в аренду на любой срок — от одного дня
+              до нескольких месяцев
+            </p>
+          </div>
+          <div class="rent-list" data-js-rent-list>
+            <template id="rent-list-template">
+              <article class="rent-item" data-js-rent-item>
+                <div class="rent-item-top">
+                  <span
+                    class="rent-item-category accent"
+                    data-js-rent-item-category
+                  ></span>
+                  <span
+                    class="status-badge status-badge-available"
+                    data-js-status-badge
+                  ></span>
+                </div>
+                <h3 class="rent-item-title" data-js-rent-item-title></h3>
+                <p class="rent-item-price" data-js-rent-item-price></p>
+                <!-- <div class="rent-item-specs"></div> -->
+                <div class="rent-item-image-wrapper">
+                  <img
+                    alt="Фото инструмента"
+                    class="rent-item-image"
+                    data-js-rent-item-image
+                    loading="lazy"
+                    width="250"
+                    height="170"
+                    onerror="
+                      this.onerror = null;
+                      this.parentNode.classList.add('img-error');
+                    "
+                  />
+                </div>
+                <a
+                  href="/"
+                  class="rent-item-link button button-primary"
+                  data-js-rent-item-link
+                ></a>
+              </article>
+            </template>
+          </div>
+          <div
+            class="pagination-container visually-hidden"
+            data-js-pagination-container
+          >
+            <button
+              class="pagination-prev-button button button-primary"
+              data-js-pagination-prev-button
+              title="Назад"
+              aria-label="Предыдущая страница"
+            >
+              <i
+                data-lucide="ChevronLeft"
+                width="16"
+                height="16"
+                aria-hidden="true"
+              ></i>
+            </button>
+            <div class="pagination-pages" aria-live="polite">
+              Стр. <span data-js-cuurent-page></span> из
+              <span data-js-total-pages></span>
+            </div>
+            <button
+              class="pagination-next-button button button-primary"
+              data-js-pagination-next-button
+              title="Вперёд"
+              aria-label="Следующая страница"
+            >
+              <i
+                data-lucide="ChevronRight"
+                width="16"
+                height="16"
+                aria-hidden="true"
+              ></i>
+            </button>
+          </div>
+          <p class="rent-note">
+            Нужен другой инструмент?
+            <span> Свяжитесь с нами для уточнения наличия</span>
+          </p>
+        </div>
+      </section>
       <!-- Section services -->
       <section class="services section" id="services">
         <div class="container">
@@ -255,22 +299,22 @@
             <li class="services-card-item card">
               <div class="card-item-content">
                 <div class="card-item-icon bg-icon">
-                  <i data-lucide="wrench" width="28" height="28"></i>
+                  <i data-lucide="package" width="28" height="28"></i>
                 </div>
                 <div class="card-item-info">
                   <div class="card-item-info-top">
-                    <h3 class="card-item-title">Ремонт электроинструмента</h3>
-                    <span class="card-item-price accent">от 1 500 ₽</span>
+                    <h3 class="card-item-title">Аренда инструмента</h3>
+                    <span class="card-item-price accent">от 500 ₽/сутки</span>
                   </div>
                   <p class="card-item-description">
-                    Профессиональный ремонт дрелей, перфораторов, болгарок,
-                    шуруповёртов и другого электроинструмента.
+                    Широкий выбор профессионального инструмента и оборудования в
+                    аренду на любой срок.
                   </p>
                   <div class="card-item-services">
-                    <span>Диагностика</span>
-                    <span>Замена щёток </span>
-                    <span>Ремонт редуктора </span>
-                    <span>Замена подшипников </span>
+                    <span>Строительный инструмент</span>
+                    <span>Садовая техника</span>
+                    <span>Сварочное оборудование</span>
+                    <span>Компрессоры</span>
                   </div>
                 </div>
               </div>
@@ -299,30 +343,32 @@
                 </div>
               </div>
             </li>
+
             <!-- 3 -->
             <li class="services-card-item card">
               <div class="card-item-content">
                 <div class="card-item-icon bg-icon">
-                  <i data-lucide="package" width="28" height="28"></i>
+                  <i data-lucide="wrench" width="28" height="28"></i>
                 </div>
                 <div class="card-item-info">
                   <div class="card-item-info-top">
-                    <h3 class="card-item-title">Аренда инструмента</h3>
-                    <span class="card-item-price accent">от 500 ₽/сутки</span>
+                    <h3 class="card-item-title">Ремонт электроинструмента</h3>
+                    <span class="card-item-price accent">от 1 500 ₽</span>
                   </div>
                   <p class="card-item-description">
-                    Широкий выбор профессионального инструмента и оборудования в
-                    аренду на любой срок.
+                    Профессиональный ремонт дрелей, перфораторов, болгарок,
+                    шуруповёртов и другого электроинструмента.
                   </p>
                   <div class="card-item-services">
-                    <span>Строительный инструмент</span>
-                    <span>Садовая техника</span>
-                    <span>Сварочное оборудование</span>
-                    <span>Компрессоры</span>
+                    <span>Диагностика</span>
+                    <span>Замена щёток </span>
+                    <span>Ремонт редуктора </span>
+                    <span>Замена подшипников </span>
                   </div>
                 </div>
               </div>
             </li>
+
             <!-- 4 -->
             <li class="services-card-item card">
               <div class="card-item-content">
@@ -466,96 +512,7 @@
           </ul>
         </div>
       </section>
-      <!-- Section rent -->
-      <section class="rent section" id="rent" data-js-rent-section>
-        <div class="container">
-          <div class="title-group">
-            <span class="tag">Аренда</span>
-            <h2 class="section-title">Аренда оборудования</h2>
-            <p class="section-subtitle">
-              Профессиональный инструмент в аренду на любой срок — от одного дня
-              до нескольких месяцев
-            </p>
-          </div>
-          <div class="rent-list" data-js-rent-list>
-            <template id="rent-list-template">
-              <article class="rent-item" data-js-rent-item>
-                <div class="rent-item-top">
-                  <span
-                    class="rent-item-category accent"
-                    data-js-rent-item-category
-                  ></span>
-                  <span
-                    class="status-badge status-badge-available"
-                    data-js-status-badge
-                  ></span>
-                </div>
-                <h3 class="rent-item-title" data-js-rent-item-title></h3>
-                <p class="rent-item-price" data-js-rent-item-price></p>
-                <!-- <div class="rent-item-specs"></div> -->
-                <div class="rent-item-image-wrapper">
-                  <img
-                    alt="Фото инструмента"
-                    class="rent-item-image"
-                    data-js-rent-item-image
-                    loading="lazy"
-                    width="250"
-                    height="170"
-                    onerror="
-                      this.onerror = null;
-                      this.parentNode.classList.add('img-error');
-                    "
-                  />
-                </div>
-                <a
-                  href="/"
-                  class="rent-item-link button button-primary"
-                  data-js-rent-item-link
-                ></a>
-              </article>
-            </template>
-          </div>
-          <div
-            class="pagination-container visually-hidden"
-            data-js-pagination-container
-          >
-            <button
-              class="pagination-prev-button button button-primary"
-              data-js-pagination-prev-button
-              title="Назад"
-              aria-label="Предыдущая страница"
-            >
-              <i
-                data-lucide="ChevronLeft"
-                width="16"
-                height="16"
-                aria-hidden="true"
-              ></i>
-            </button>
-            <div class="pagination-pages" aria-live="polite">
-              Стр. <span data-js-cuurent-page></span> из
-              <span data-js-total-pages></span>
-            </div>
-            <button
-              class="pagination-next-button button button-primary"
-              data-js-pagination-next-button
-              title="Вперёд"
-              aria-label="Следующая страница"
-            >
-              <i
-                data-lucide="ChevronRight"
-                width="16"
-                height="16"
-                aria-hidden="true"
-              ></i>
-            </button>
-          </div>
-          <p class="rent-note">
-            Нужен другой инструмент?
-            <span> Свяжитесь с нами для уточнения наличия</span>
-          </p>
-        </div>
-      </section>
+
       <!-- Section why choose us -->
       <section class="why-choose-us section">
         <div class="container">
@@ -1112,6 +1069,8 @@
                 </div>
                 <button
                   type="submit"
+                  disabled
+                  title="Будет работать позже"
                   class="contacts-form-button button button-primary"
                 >
                   Отправить заявку
@@ -1132,9 +1091,7 @@
                   </div>
                   <p class="contact-info-item-content">
                     <span>Адрес</span>
-                    <span
-                      >г. Железногорск, ул. Промышленная, д. 15, стр. 2</span
-                    >
+                    <span>г. Железногорск, ул. Мира, 6А</span>
                   </p>
                 </li>
                 <!-- Phone -->
@@ -1154,7 +1111,7 @@
                   </div>
                   <p class="contact-info-item-content">
                     <span>Email</span>
-                    <a href="mailto:info@company.ru">info@masterskaya1.ru</a>
+                    <a href="mailto:info@company.ru">Будет добавлен позже</a>
                   </p>
                 </li>
                 <!-- work-hours -->
@@ -1163,10 +1120,8 @@
                     <i data-lucide="clock" width="24" height="24"></i>
                   </div>
                   <p class="contact-info-item-content">
-                    <span> Вс: 10:00 - 18:00</span>
-                    <span
-                      >г. Железногорск, ул. Промышленная, д. 15, стр. 2</span
-                    >
+                    <span> Будни: 9:00 - 18:00</span>
+                    <span>Сб–Вс: 10:00 - 14:00</span>
                   </p>
                 </li>
               </ul>
@@ -1191,7 +1146,8 @@
           <div class="footer-body-column">
             <a href="#hero" class="logo">
               <div class="logo-image">
-                <i data-lucide="wrench" width="20" height="20"></i>
+                <!-- <i data-lucide="wrench" width="20" height="20"></i> -->
+                <img src="./public/logo.webp" alt="" />
               </div>
               <div class="logo-text">
                 <span>Мастерская <span class="accent">№1</span></span>
@@ -1215,7 +1171,7 @@
               <!-- email -->
               <li class="foter-body-column-item">
                 <i data-lucide="mail" width="16" height="16" class="accent"></i>
-                <a href="mailto:info@company.ru">info@masterskaya1.ru</a>
+                <a href="mailto:info@company.ru">Будет добавлен позже</a>
               </li>
               <!-- address -->
               <li class="foter-body-column-item">
@@ -1225,7 +1181,7 @@
                   height="16"
                   class="accent"
                 ></i>
-                <span>г. Железногорск, ул. Промышленная, д. 15, стр. 2</span>
+                <span>г. Железногорск, ул. Мира, 6А</span>
               </li>
             </ul>
           </div>
@@ -1286,7 +1242,7 @@
         </div>
         <div class="footer-bottom">
           <p>© 2025 Мастерская №1. Все права защищены.</p>
-          <p>Режим работы: Пн-Сб 9:00-20:00</p>
+          <p>Режим работы: Пн-Пт: 9:00-18:00, Сб-Вс: 10:00-14:00</p>
         </div>
       </div>
     </footer>
@@ -1344,5 +1300,53 @@
         }
       }
     </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        ((k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a));
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js?id=109643397",
+        "ym",
+      );
+
+      ym(109643397, "init", {
+        ssr: true,
+        webvisor: true,
+        clickmap: true,
+        ecommerce: "dataLayer",
+        referrer: document.referrer,
+        url: location.href,
+        accurateTrackBounce: true,
+        trackLinks: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/109643397"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
   </body>
 </html>

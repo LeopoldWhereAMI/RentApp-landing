@@ -3,7 +3,6 @@ import { getInventory } from "./inventory";
 
 vi.mock("../shared/config/config", () => ({
   API_URL: "http://test",
-  USER_ID: "1",
 }));
 
 const mockFetch = vi.fn();
@@ -31,6 +30,7 @@ describe("getInventory", () => {
     mockSuccess([{ id: 1 }]);
 
     const result = await getInventory();
+
     expect(result).toEqual([{ id: 1 }]);
   });
 
@@ -44,8 +44,9 @@ describe("getInventory", () => {
     mockSuccess([]);
 
     await getInventory();
+
     expect(globalThis.fetch).toHaveBeenLastCalledWith(
-      "http://test/api/inventory?user_id=1",
+      "http://test/api/public/inventory",
     );
   });
 });

@@ -414,6 +414,7 @@
   align-items: center;
   margin-bottom: var(--space-6);
   width: 100%;
+  min-height: 202px;
   background-color: var(--bg-card);
   border-radius: var(--radius);
   padding-block: var(--space-4);
@@ -424,6 +425,7 @@
 }
 
 .rent-item-image {
+  width: auto;
   max-height: 170px;
   object-fit: cover;
   border-radius: var(--radius);
@@ -796,7 +798,7 @@
 
 .footer-body {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: var(--space-12);
   padding-bottom: var(--space-8);
   border-bottom: 1px solid var(--border);
@@ -831,12 +833,20 @@
   gap: var(--space-2);
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: var(--space-8);
 }
+
+/* icons */
 
 /* 1150px */
 @media (max-width: 1150px) {

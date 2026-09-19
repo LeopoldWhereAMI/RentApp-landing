@@ -39,8 +39,7 @@
       <div class="header-container container">
         <a href="#hero" class="logo">
           <div class="logo-image">
-            <!-- <i data-lucide="wrench" width="20" height="20"></i> -->
-            <img src="./public/logo.webp" alt="logo" />
+            <img src="./logo.webp" alt="logo" />
           </div>
           <div class="logo-text">
             <span>Мастерская <span class="accent">№1</span></span>
@@ -234,7 +233,7 @@
                   />
                 </div>
                 <a
-                  href="/"
+                  href="#contacts"
                   class="rent-item-link button button-primary"
                   data-js-rent-item-link
                 ></a>
@@ -1012,7 +1011,12 @@
             <!-- form -->
             <div class="contacts-form-wrapper">
               <h3 class="contacts-form-title">Оставить заявку</h3>
-              <form class="contacts-form">
+              <form
+                class="contacts-form"
+                data-js-contact-form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+              >
                 <!-- name -->
                 <div class="form-group">
                   <label class="visually-hidden" for="name">Ваше имя</label>
@@ -1023,7 +1027,8 @@
                     id="name"
                     autocomplete="name"
                     required
-                    pattern=".*\S.*"
+                    pattern="^[A-Za-zА-Яа-яЁё\s\-]{2,50}$"
+                    title="Только буквы, пробел и дефис"
                     class="form-name-input input"
                   />
                 </div>
@@ -1032,29 +1037,19 @@
                   <label class="visually-hidden" for="tel">Телефон</label>
                   <input
                     type="tel"
-                    placeholder="Телефон"
+                    placeholder="+79991234567"
                     name="tel"
                     id="tel"
                     autocomplete="tel"
                     inputmode="tel"
                     required
+                    pattern="\+7\d{10}"
+                    maxlength="12"
+                    title="Введите номер телефона в формате +79991234567"
                     class="form-tel-input input"
                   />
                 </div>
-                <!-- email -->
-                <div class="form-group">
-                  <label class="visually-hidden" for="email"
-                    >Email (необязательно)</label
-                  >
-                  <input
-                    type="email"
-                    placeholder="Email (необязательно)"
-                    name="email"
-                    id="email"
-                    autocomplete="email"
-                    class="form-email-input input"
-                  />
-                </div>
+
                 <!-- textarea -->
                 <div class="form-group">
                   <label class="visually-hidden" for="questions"
@@ -1065,14 +1060,28 @@
                     id="questions"
                     placeholder="Опишите вашу проблему или вопрос"
                     required
-                    pattern=".*\S.*"
+                    minlength="10"
+                    maxlength="500"
                     class="contacts-form-textarea textaerea"
                   ></textarea>
                 </div>
+                <div
+                  class="form-group"
+                  style="display: none"
+                  aria-hidden="true"
+                >
+                  <label for="botcheck">Не заполняйте это поле</label>
+                  <input
+                    type="text"
+                    name="botcheck"
+                    id="botcheck"
+                    tabindex="-1"
+                    autocomplete="off"
+                  />
+                </div>
                 <button
                   type="submit"
-                  disabled
-                  title="Будет работать позже"
+                  data-js-submitButton
                   class="contacts-form-button button button-primary"
                 >
                   Отправить заявку
@@ -1081,8 +1090,73 @@
                   Нажимая кнопку, вы соглашаетесь с политикой обработки
                   персональных данных
                 </p>
+                <!--  -->
+                <div class="contacts-socials">
+                  <p class="contacts-socials-title">
+                    Или напишите нам в соцсетях
+                  </p>
+                  <div class="social-links">
+                    <a
+                      href="https://vk.ru/remonttehniki46rus"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Мы в VK"
+                      aria-label="ВКонтакте"
+                      class="contacts-social-link"
+                    >
+                      <img
+                        src="/icons/vk.svg"
+                        alt="ВКонтакте"
+                        width="24"
+                        height="24"
+                      />
+                      <span>ВКонтакте</span>
+                    </a>
+
+                    <a
+                      href="https://ok.ru/profile/572383228527"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Мы в OK"
+                      aria-label="Одноклассники"
+                      class="contacts-social-link"
+                    >
+                      <img
+                        src="/icons/ok.svg"
+                        alt="Одноклассники"
+                        width="24"
+                        height="24"
+                      />
+                      <span>Одноклассники</span>
+                    </a>
+
+                    <a
+                      href="https://max.ru/u/f9LHodD0cOJhBCHROz531nL3jLhl8eAMt5Zv1wWAMxi3d6dYxnsnYMavTSo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Мы в MAX"
+                      aria-label="MAX"
+                      class="contacts-social-link"
+                    >
+                      <img
+                        src="/icons/MAX.svg"
+                        alt="MAX"
+                        width="24"
+                        height="24"
+                      />
+                      <span>MAX</span>
+                    </a>
+                  </div>
+                </div>
+                <!--  -->
+                <p
+                  class="contacts-form-message"
+                  data-js-form-message
+                  aria-live="polite"
+                ></p>
               </form>
             </div>
+
             <!-- contact-info -->
             <div class="contact-info-wrapper">
               <ul class="contact-info-list">
@@ -1148,7 +1222,7 @@
           <div class="footer-body-column">
             <a href="#hero" class="logo">
               <div class="logo-image">
-                <img src="./public/logo.webp" alt="logo" />
+                <img src="./logo.webp" alt="logo" />
               </div>
               <div class="logo-text">
                 <span>Мастерская <span class="accent">№1</span></span>
@@ -1251,9 +1325,10 @@
                 rel="noopener noreferrer"
                 title="Мы в VK"
                 aria-label="ВКонтакте"
+                class="contacts-social-link"
               >
                 <img
-                  src="/public/icons/vk.svg"
+                  src="/icons/vk.svg"
                   alt="ВКонтакте"
                   width="24"
                   height="24"
@@ -1266,9 +1341,10 @@
                 rel="noopener noreferrer"
                 title="Мы в OK"
                 aria-label="Одноклассники"
+                class="contacts-social-link"
               >
                 <img
-                  src="/public/icons/ok.svg"
+                  src="/icons/ok.svg"
                   alt="Одноклассники"
                   width="24"
                   height="24"
@@ -1281,13 +1357,9 @@
                 rel="noopener noreferrer"
                 title="Мы в MAX"
                 aria-label="MAX"
+                class="contacts-social-link"
               >
-                <img
-                  src="/public/icons/MAX.svg"
-                  alt="MAX"
-                  width="24"
-                  height="24"
-                />
+                <img src="/icons/MAX.svg" alt="MAX" width="24" height="24" />
               </a>
             </div>
           </div>

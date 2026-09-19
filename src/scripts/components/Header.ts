@@ -47,7 +47,7 @@ class Header {
     document.documentElement.classList.toggle(this.stateClasses.isLock);
   };
 
-  bindEvents() {
+  private bindEvents() {
     this.burgerButtonElement.addEventListener(
       "click",
       this.onBurgerButtonClick,

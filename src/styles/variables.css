@@ -8,6 +8,7 @@
   --color-orange-light: #f6722b33;
   --color-orange-dark: #f6722b1a;
   --color-muted: oklch(0.65 0 0);
+  --color-success: oklch(0.7 0.17 145);
   --color-error: #ef4444;
 
   --bg-card: lab(5.26385% -0.391565 -1.40753);

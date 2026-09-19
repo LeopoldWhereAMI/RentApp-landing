@@ -579,6 +579,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 280px;
   padding: var(--space-6);
   background-color: var(--color-dark);
   border: 1px solid var(--border);
@@ -602,7 +603,10 @@
 }
 
 .review-text {
+  flex: 1;
   margin-bottom: var(--space-6);
+  height: 210px;
+  overflow: hidden;
   color: var(--color-light);
   line-height: 26px;
 }
@@ -618,6 +622,20 @@
   line-height: 24px;
   color: var(--color-light);
   font-weight: 600;
+}
+
+.reviews-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+  text-align: center;
+}
+
+.reviews-action-text {
+  margin: 0;
+  color: var(--color-muted);
 }
 
 /* Faq */

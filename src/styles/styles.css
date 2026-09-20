@@ -758,7 +758,8 @@
   font-size: 0.75rem;
   line-height: 16px;
 }
-/*  */
+
+/* social links */
 .contacts-socials {
   margin-top: var(--space-6);
   padding-top: var(--space-6);
@@ -769,6 +770,13 @@
   margin-bottom: var(--space-3);
   color: var(--color-light);
   font-size: 0.875rem;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
 }
 
 .contacts-social-link {
@@ -896,12 +904,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
 }
 
 .footer-bottom {
@@ -1112,6 +1114,11 @@
 
 /* 360px */
 @media (max-width: 360px) {
+  .section {
+    margin-bottom: var(--space-4);
+    padding-block: var(--space-4);
+  }
+
   .card-item-services {
     max-width: 200px;
   }

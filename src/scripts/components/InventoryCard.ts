@@ -50,7 +50,6 @@ class InventoryCard {
       itemLink.setAttribute("aria-disabled", "true");
     }
 
-    // itemImage.src = item.image_url || "";
     itemImage.src = item.image_url ? `${API_URL}${item.image_url}` : "";
     itemImage.alt = item.name;
 

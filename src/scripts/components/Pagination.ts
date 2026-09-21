@@ -11,7 +11,7 @@ class Pagination {
     pagination: "[data-js-pagination-container]",
     prevButton: "[data-js-pagination-prev-button]",
     nextButton: "[data-js-pagination-next-button]",
-    currentPageElement: "[data-js-cuurent-page]",
+    currentPageElement: "[data-js-current-page]",
     totalPagesElement: "[data-js-total-pages]",
   };
 

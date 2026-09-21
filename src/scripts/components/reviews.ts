@@ -1,4 +1,4 @@
-import { createIcons, icons } from "lucide";
+import { createIcons, Quote, Star } from "lucide";
 import { REVIEWS } from "../shared/constants/reviews";
 import { getElement } from "../shared/helpers/dom";
 
@@ -35,7 +35,7 @@ class Reviews {
               <p>${date}</p>
             </div>
 
-            <div class="rewiev-rating">
+            <div class="review-rating" aria-label="Рейтинг: ${rating} из 5">
               ${this.renderStars(rating)}
             </div>
           </div>
@@ -43,7 +43,7 @@ class Reviews {
       `,
     ).join("");
 
-    createIcons({ icons });
+    createIcons({ icons: { Quote, Star } });
   }
 
   renderStars(rating: number) {
@@ -55,6 +55,7 @@ class Reviews {
           class="star ${index < rating ? "star-active" : ""}"
           width="16"
           height="16"
+          aria-hidden="true"
         ></i>
       `,
     ).join("");

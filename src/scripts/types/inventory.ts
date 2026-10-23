@@ -7,7 +7,8 @@ export type RentItem = {
   name: string;
   category: Category;
   daily_price: number;
-  status: "available" | "rented" | "maintenance";
+  // status: "available" | "rented" | "maintenance";
+  status: Status;
   serial_number: string;
   image_url?: string | null;
 };
